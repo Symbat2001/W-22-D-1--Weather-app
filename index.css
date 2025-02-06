@@ -1,4 +1,4 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
 
@@ -38,30 +38,17 @@ ul {
     justify-content: space-around;
     border-radius: 10px;
     align-items: center;
+    
 }
 
 a{
     text-decoration: none;
-    color: black;
-} */
+    text-decoration: line red;
+    color: gold;
+}
 
 
-
-
-/* .input-box{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    border-radius: 10px;
-
-} */
-
-
-
-
-
-/* .input-box{
+.input-box{
     width: 300px;
     height: 40px;
     margin-left: 35px;
@@ -104,138 +91,7 @@ a{
 
 .input:focus{
     background-color: aliceblue;
-} */
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
-
-body {
-    background: skyblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding-top: 20px;
-}
-
-
-header {
-    width: 90%;
-    max-width: 1200px;
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.logolar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.photo1 {
-    width: 100px;
-    height: 100px;
-}
-
-.photo2 {
-    width: 50px;
-    height: 50px;
-}
-
-.logolar h3 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-}
-
-
-.input-box {
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: 250px;
-    transition: 0.3s ease-in-out;
-    position: relative;
-}
-
-.input {
-    background: none;
-    border: none;
-    outline: none;
-    padding: 10px;
-    width: 100%;
-    font-size: 16px;
-    color: #333;
-}
-
-.input::placeholder {
-    color: #666;
-}
-
-.input-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.input-box:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-
-nav {
-    width: 90%;
-    max-width: 1200px;
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-
-.suretter {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 
 @media (max-width: 768px) {
     .logolar {
@@ -258,5 +114,77 @@ nav ul li a:hover {
 }
 
 
+@keyframes showerAnimation {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 400px;
+    }
+}
+
+.showerAnimation{
+    animation: showerAnimation 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.showerAnimationEnd{
+    height: 400px;
+}
+
+.header-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    
+
+}
+
+.header-center h3{
+    color: rgb(247, 226, 111);
+    font-size: 23px;
+}
+
+.header-center h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    gap: 50px;
+}
 
 
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: skyblue;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.local-icons {
+    width: 50px;
+    height: 50px;
+}
+
+.local-temp {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#bugin{
+    color: skyblue;
+}
+
+#kazakh{
+    color: skyblue;
+}
